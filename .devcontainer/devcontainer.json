@@ -1,12 +1,13 @@
 {
-    "name": "template-datascience",
-    "dockerComposeFile": "../docker-compose.yml",
-    "service": "app",
-    "runServices": [
-        "ollama",
-        "open-webui",
-        "jupyter"
+    "name": "datascience-slim",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".."
+    },
+    "runArgs": [
+        "--name", "vsc-${localWorkspaceFolderBasename}"
     ],
+    "workspaceMount": "source=.,target=/app,type=bind,consistency=cached",
     "workspaceFolder": "/app",
     "customizations": {
         "vscode": {
@@ -33,7 +34,8 @@
                 "christian-kohler.path-intellisense",
                 "redhat.vscode-yaml",
                 "tamasfe.even-better-toml",
-                "ms-python.autopep8"
+                "ms-python.autopep8",
+                "charliermarsh.ruff"
             ]
         }
     }
