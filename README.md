@@ -11,19 +11,19 @@ Clone the repository into the desire folder
 * With `ssh`
 
     ```bash
-    git clone git@github.com:LucasVmigotto/usp-mba-data-science-analytics.git
+    git clone git@github.com:LucasVmigotto/.datascience-slim.git
     ```
 
 * With `HTTPS`
 
     ```bash
-    git clone https://github.com/LucasVmigotto/usp-mba-data-science-analytics.git
+    git clone https://github.com/LucasVmigotto/.datascience-slim.git
     ```
 
 * With GitHub CLI
 
     ```bash
-    gh repo clone LucasVmigotto/usp-mba-data-science-analytics.git
+    gh repo clone LucasVmigotto/.datascience-slim
     ```
 
 ## Pre requisites
